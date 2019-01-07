@@ -1,0 +1,54 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/fauro/Documentos/hackfest/aondejaok
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/Carros.php
+> git ls-files --stage -- app/
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/Http/Controllers/Controller.php
+> git show :app/Http/Controllers/CarroController.php
+> git ls-files --stage -- app/Http/Controllers/
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :database/migrations/2018_12_17_004648_carros.php
+> git ls-files --stage -- database/migrations/
+> git show :database/migrations/2014_10_12_100000_create_password_resets_table.php
+> git show :database/migrations/2018_12_17_004648_carros.php
+> git ls-files --stage -- database/migrations/
+> git check-ignore -z --stdin
+> git show :config/database.php
+> git show :.env
+> git show :database/migrations/2018_12_17_004648_carros.php
+> git ls-files --stage -- database/migrations/
+> git show :config/database.php
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :config/database.php
+> git show :.env.example
+> git show :.env
+> git show :config/database.php
+> git show :database/migrations/2014_10_12_000000_create_users_table.php
+> git show :database/migrations/2014_10_12_100000_create_password_resets_table.php
+> git show :database/migrations/2014_10_12_000000_create_users_table.php
+> git show :config/database.php

@@ -1,0 +1,35 @@
+{
+    "telemetry.machineId": "107063ad2ced5b015ab79e799faa31e51251431e71e914c0a8f28906b8f6ae6f",
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/usr/local/lib/python3.6/dist-packages/pymessager",
+                "external": "file:///usr/local/lib/python3.6/dist-packages/pymessager",
+                "path": "/usr/local/lib/python3.6/dist-packages/pymessager",
+                "scheme": "file"
+            },
+            "backupPath": "/home/fauro/Documentos/hackfest/aondejaok/~/.vscode-root/Backups/2d33e198e9e6a542ac85132a2fedd922",
+            "uiState": {
+                "mode": 0,
+                "x": 67,
+                "y": 27,
+                "width": 1299,
+                "height": 741
+            }
+        }
+    },
+    "pickerWorkingDir": "/usr/local/lib/python3.6/dist-packages",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/fauro/Documentos/hackfest/aondejaok",
+            "file:///usr/local/lib/python3.6/dist-packages/pymessager",
+            "file:///usr/local/lib/python3.6/dist-packages/pymessenger",
+            "file:///home/fauro/Documentos/hackfest/chat-bot"
+        ],
+        "files2": []
+    }
+}

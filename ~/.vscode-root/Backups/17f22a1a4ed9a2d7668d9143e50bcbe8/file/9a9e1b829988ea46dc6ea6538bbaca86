@@ -1,0 +1,108 @@
+file:///home/fauro/Documentos/hackfest/aondejaok/resources/views/welcome.blade.php
+{{-- {{dd('sx') }} --}}
+@extends ('adminlte::page')
+
+@section('title', 'Dashboard')
+
+@section('content')
+<div>
+    <!-- Content Header (Page header) 
+    <section class="content-header">
+        <h1>
+            Timeline
+        </h1>
+    </section> -->
+    <!-- Main content -->
+    <section class="content">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The time line -->
+                
+                
+                
+                <ul class="timeline">
+
+                    <!-- timeline time label -->
+                    <!-- /.timeline-label -->
+                    <!--$temporario = 0-->
+                    @foreach ($carros as $car)
+                        @if ($car->status == 'S')
+                    <li class="time-label">
+                        <span class="bg-red">{{ date( 'd/m/Y' , strtotime($car->dataEhora))}}</span>
+                    </li>
+                    <!-- timeline item -->
+                    <li>
+                        <i class="fa fa-exclamation bg-yellow"></i>
+                        <div class="timeline-item">
+                         <!--   <span class="time"><i class="fa fa-clock-o"></i> 01/10/2018</span> -->
+                         <!--   <h3 class="timeline-header"><a href="#">Anonimo -->
+                         <!--       </a> -->
+                            </h3>
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                <!--    <div class="user-block"> -->
+                                <!--        <img class="img-circle" src="https://blog.maxieduca.com.br/wp-content/uploads/2016/12/002-anonimo.jpg" alt="User Image"> -->
+                                        <span class="username"><a href="#"><font size = "4">{{$car->orgao}}</font></a></span>
+                                        <span class="description"><br>{{$car->placa}}</span>
+                                <!--    </div> -->
+                                    <!-- /.user-block -->
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <img class="img-responsive pad" src={{$car->url}} alt="Photo">
+                                    <hr/>
+                                    <p>{{$car->descricao}}</p>
+                                <!-- /.box-comment -->
+                                <div class="box-footer box-comments">
+                                <div class="box-comment">
+                                    <!-- User image -->
+                                    <img class="img-circle img-sm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4TidaW_k5Oe4xuOIpBmEjS01glGzcJhZUshdpMkUlRf-mF51oA" alt="User Image">
+
+                                    <div class="comment-text">
+                                        <span class="username">
+                                            Maria Gonzales
+                                            <span class="text-muted pull-right">Data aqui</span>
+                                        </span><!-- /.username -->
+                                    It is a long established fact that a reader will be distracted
+                                    by the readable content of a page when looking at its layout.
+                                    </div>
+                                    <!-- /.comment-text -->
+                                </div>
+                                <!-- /.box-comment -->
+                                </div>
+                                <!-- /.box-body -->
+                                <!-- /.box-footer -->
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END timeline item -->
+                         @endif
+                    @endforeach
+                       
+                    <!-- timeline time label -->
+                    <!-- /.timeline-label -->
+                    <!-- timeline item -->
+                    <li>
+                        <i class="fa fa-clock-o bg-gray"></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
